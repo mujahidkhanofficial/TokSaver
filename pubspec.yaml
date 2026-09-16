@@ -1,0 +1,108 @@
+﻿name: tiktok_downloader
+description: "Download TikTok videos fast and privately with TokSaver. No ads, no account required."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Navigation
+  go_router: ^15.0.0
+
+  # State management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # Networking
+  dio: ^5.7.0
+
+  # Local database
+  drift: ^2.22.0
+  sqlite3_flutter_libs: ^0.5.24
+
+  # File system
+  path_provider: ^2.1.4
+  path: ^1.9.0
+
+  # Image caching
+  cached_network_image: ^3.4.1
+
+  # Notifications
+  flutter_local_notifications: ^18.0.0
+
+  # Connectivity
+  connectivity_plus: ^7.0.0
+
+  # Sharing
+  share_plus: ^12.0.2
+
+  # URL launcher (open video, folder)
+  url_launcher: ^6.3.1
+
+  # Fonts
+  google_fonts: ^6.2.1
+
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+  # Logging (debug only)
+  logger: ^2.5.0
+
+  # Cupertino icons
+  cupertino_icons: ^1.0.8
+
+  # Built-in Video & Audio Player
+  video_player: ^2.9.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  riverpod_generator: ^2.6.1
+  build_runner: ^2.4.13
+  drift_dev: ^2.22.0
+  mocktail: ^1.0.4
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/app_icon.png"
+  min_sdk_android: 26
+  adaptive_icon_background: "#0E0E12"
+  adaptive_icon_foreground: "assets/icon/app_icon.png"
+  web:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    background_color: "#0E0E12"
+    theme_color: "#00B8D9"
+  windows:
+    generate: true
+    image_path: "assets/icon/app_icon.png"
+    icon_size: 256
+
+flutter_native_splash:
+  color: "#0E0E12"
+  image: "assets/icon/app_icon.png"
+  color_dark: "#0E0E12"
+  image_dark: "assets/icon/app_icon.png"
+  android_12:
+    image: "assets/icon/app_icon.png"
+    icon_background_color: "#0E0E12"
+    color: "#0E0E12"
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icon/
+
+  # Fonts handled via google_fonts package at runtime

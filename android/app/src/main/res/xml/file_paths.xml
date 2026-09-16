@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Temporary download directory inside app-private cache -->
+    <cache-path name="downloads_cache" path="downloads/" />
+    <!-- External files dir for sharing completed videos -->
+    <external-files-path name="external_files" path="." />
+</paths>
